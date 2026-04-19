@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martín Coronel — Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+</head>
+<body>
+
+<div class="controls">
+    <button class="ctrl-btn" id="langBtn">EN/ES</button>
+    <button class="ctrl-btn" id="themeBtn">◐ THEME</button>
+</div>
+
+<div class="page">
+
+    <!-- HERO -->
+    <header class="hero">
+        <p class="hero-eyebrow" data-t="eyebrow">Backend Developer · Argentina</p>
+        <h1>Martín<br><em>Coronel</em></h1>
+        <p class="hero-tagline" data-t="tagline">APIs · Databases · Cloud Infrastructure</p>
+        <div class="hero-line"></div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <p class="section-label" data-t="aboutLabel">About</p>
+        <div class="about-grid">
+            <p class="about-text" data-t="aboutText">
+                Backend developer focused on building scalable systems in Java. I design databases, craft RESTful APIs, and work with distributed architectures and microservices. Currently exploring secret management and zero-trust security patterns.
+            </p>
+            <div>
+                <div class="skills-wrap">
+                    <span class="skill-tag highlight">Java</span>
+                    <span class="skill-tag highlight">Spring</span>
+                    <span class="skill-tag highlight">Docker</span>
+                    <span class="skill-tag highlight">PostgreSQL</span>
+                    <span class="skill-tag">Redis</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">VPS</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">JWT Auth</span>
+                    <span class="skill-tag">API Design</span>
+                    <span class="skill-tag">DB Design</span>
+                    <span class="skill-tag">Arduino/ESP</span>
+                    <span class="skill-tag">MQTT</span>
+                    <span class="skill-tag">Embedded</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">LangChain</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <p class="section-label" data-t="projectsLabel">Projects</p>
+        <div class="projects-list">
+
+            <div class="project-item">
+                <div class="project-header">
+                    <span class="project-name">Vassago PoC</span>
+                    <div class="project-links">
+                        <a href="https://github.com/gnosticDeveloper/vassagoPoC" class="proj-link" target="_blank" rel="noopener">GitHub ↗</a>
+                    </div>
+                </div>
+                <p class="project-desc" data-t="proj1Desc">
+                    Distributed authentication proof-of-concept built with Spring Boot 4 and WebFlux. Offloads all credential management and JWT cryptographic signing to OpenBao (a HashiCorp Vault fork), keeping the application itself fully stateless and secret-free. Fully containerized with Docker Compose — Postgres, OpenBao, and the app spin up with a single command.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Java 21</span>
+                    <span class="project-tag">Spring WebFlux</span>
+                    <span class="project-tag">R2DBC</span>
+                    <span class="project-tag">OpenBao</span>
+                    <span class="project-tag">PostgreSQL</span>
+                    <span class="project-tag">Docker</span>
+                    <span class="project-tag">JWT / ES256</span>
+                    <span class="project-tag">Reactive</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <span class="project-name">vassago_docs_util</span>
+                    <div class="project-links">
+                        <a href="https://github.com/gnosticDeveloper/vassago_docs_util" class="proj-link" target="_blank" rel="noopener">GitHub ↗</a>
+                    </div>
+                </div>
+                <p class="project-desc" data-t="proj2Desc">
+                    CLI tool that auto-generates README documentation for any codebase using Claude AI. Runs repomix to extract the project's file tree and source, then streams a tailored response from Claude Haiku in three modes: concise overview, verbose per-method docs, or public-facing onboarding guide. Estimates token cost before sending.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">LangChain</span>
+                    <span class="project-tag">Claude Haiku</span>
+                    <span class="project-tag">CLI</span>
+                    <span class="project-tag">repomix</span>
+                    <span class="project-tag">Apache 2.0</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <p class="section-label" data-t="contactLabel">Contact</p>
+        <div class="contact-grid">
+            <a href="mailto:gnosticdev.studio@proton.me" class="contact-item">
+                <p class="contact-label" data-t="emailLabel">Email</p>
+                <p class="contact-value">Write me</p>
+            </a>
+            <a href="https://github.com/gnosticDeveloper" class="contact-item" target="_blank" rel="noopener">
+                <p class="contact-label">GitHub</p>
+                <p class="contact-value">gnosticDeveloper</p>
+            </a>
+            <a href="https://linkedin.com/in/kjistik" class="contact-item" target="_blank" rel="noopener">
+                <p class="contact-label">LinkedIn</p>
+                <p class="contact-value">Martín Coronel</p>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span>Martín Coronel</span>
+    </footer>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
